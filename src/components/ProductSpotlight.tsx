@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Zap, Shield, Cpu, Droplet } from 'lucide-react'
 
+
 interface ProductSpotlightProps {
   product: {
     name: string
@@ -27,35 +28,50 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className={`grid lg:grid-cols-2 gap-16 items-center ${
-          product.reversed ? 'lg:grid-flow-col-dense' : ''
-        }`}>
+        <div
+          className={`grid lg:grid-cols-2 gap-16 items-center ${
+            product.reversed ? "lg:grid-flow-col-dense" : ""
+          }`}
+        >
           {/* Product Image */}
-          <div className={`relative ${product.reversed ? 'lg:col-start-2' : ''}`}>
+          <div
+            className={`relative ${product.reversed ? "lg:col-start-2" : ""}`}
+          >
             <div className="relative group">
               <img
                 src={product.image}
                 alt={product.name}
                 className="w-full h-auto max-w-lg mx-auto object-contain animate-float transition-spring group-hover:scale-105"
               />
-              <div className={`absolute inset-0 bg-gradient-to-br ${
-                product.accent === 'primary' ? 'from-primary/30' : 'from-accent/30'
-              } to-transparent rounded-3xl blur-3xl opacity-60`} />
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${
+                  product.accent === "primary"
+                    ? "from-primary/30"
+                    : "from-accent/30"
+                } to-transparent rounded-3xl blur-3xl opacity-60`}
+              />
             </div>
           </div>
 
           {/* Content */}
-          <div className={`space-y-8 ${product.reversed ? 'lg:col-start-1' : ''}`}>
+          <div
+            className={`space-y-8 ${product.reversed ? "lg:col-start-1" : ""}`}
+          >
             <div className="space-y-4 animate-slide-in-left">
-              <Badge variant="outline" className="border-primary/50 text-primary">
+              <Badge
+                variant="outline"
+                className="border-primary/50 text-primary"
+              >
                 New Release
               </Badge>
               <h2 className="text-6xl font-extralight tracking-tight">
                 {product.name}
               </h2>
-              <p className={`text-2xl font-light ${
-                product.accent === 'primary' ? 'text-primary' : 'text-accent'
-              }`}>
+              <p
+                className={`text-2xl font-light ${
+                  product.accent === "primary" ? "text-primary" : "text-accent"
+                }`}
+              >
                 {product.tagline}
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -68,16 +84,20 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
               {product.features.map((feature, index) => (
                 <Card key={index} className="bento-card p-6 hover:glow-primary">
                   <div className="flex items-start space-x-4">
-                    <div className={`p-3 rounded-2xl ${
-                      product.accent === 'primary' 
-                        ? 'bg-primary/20 text-primary' 
-                        : 'bg-accent/20 text-accent'
-                    }`}>
+                    <div
+                      className={`p-3 rounded-2xl ${
+                        product.accent === "primary"
+                          ? "bg-primary/20 text-primary"
+                          : "bg-accent/20 text-accent"
+                      }`}
+                    >
                       {feature.icon}
                     </div>
                     <div>
                       <h3 className="font-medium mb-2">{feature.title}</h3>
-                      <p className="text-sm text-muted-foreground">{feature.description}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {feature.description}
+                      </p>
                     </div>
                   </div>
                 </Card>
@@ -86,40 +106,26 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
 
             {/* Specifications */}
             <Card className="bento-card p-6 animate-scale-in">
-              <h3 className="text-xl font-medium mb-4">Technical Specifications</h3>
+              <h3 className="text-xl font-medium mb-4">
+                Technical Specifications
+              </h3>
               <div className="grid grid-cols-2 gap-4">
                 {product.specs.map((spec, index) => (
-                  <div key={index} className="flex justify-between items-center">
+                  <div
+                    key={index}
+                    className="flex justify-between items-center"
+                  >
                     <span className="text-muted-foreground">{spec.label}</span>
                     <span className="font-medium">{spec.value}</span>
                   </div>
                 ))}
               </div>
             </Card>
-
-            {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-right">
-              <Button 
-                size="lg"
-                className={`${
-                  product.accent === 'primary' ? 'gradient-primary' : 'bg-accent hover:bg-accent/90'
-                } glow-primary hover:scale-105 transition-spring text-lg px-8 py-6`}
-              >
-                Shop {product.name}
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-border/50 hover:border-primary/50 text-lg px-8 py-6"
-              >
-                Learn More
-              </Button>
-            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 // Product data

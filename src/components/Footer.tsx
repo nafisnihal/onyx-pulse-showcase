@@ -50,19 +50,18 @@ export const Footer = () => {
       {/* Background Effects */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-6 py-16 relative z-10">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-12 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-2 space-y-6">
             <div className="space-y-4">
-              <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">
-                INFLAVE
-              </div>
+              <div className="text-3xl font-bold ">INFLAVE</div>
               <p className="text-muted-foreground leading-relaxed max-w-md">
-                Crafting the future of premium vaping experiences through innovative 
-                technology, elegant design, and uncompromising quality.
+                Crafting the future of premium vaping experiences through
+                innovative technology, elegant design, and uncompromising
+                quality.
               </p>
             </div>
 
@@ -83,7 +82,10 @@ export const Footer = () => {
             </div>
 
             {/* Age Verification Badge */}
-            <Badge variant="outline" className="border-primary/50 text-primary w-fit">
+            <Badge
+              variant="outline"
+              className="border-primary/50 text-primary w-fit"
+            >
               21+ Age Verified
             </Badge>
           </div>
@@ -115,7 +117,8 @@ export const Footer = () => {
             <div>
               <h3 className="text-2xl font-light mb-2">Stay Updated</h3>
               <p className="text-muted-foreground">
-                Get the latest product updates, exclusive offers, and insider news.
+                Get the latest product updates, exclusive offers, and insider
+                news.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -140,7 +143,9 @@ export const Footer = () => {
 
           {/* Social Links */}
           <div className="flex items-center space-x-4">
-            <span className="text-muted-foreground text-sm mr-4">Follow us:</span>
+            <span className="text-muted-foreground text-sm mr-4">
+              Follow us:
+            </span>
             {socialLinks.map((social) => (
               <a
                 key={social.label}
@@ -159,12 +164,13 @@ export const Footer = () => {
         {/* Legal Notice */}
         <div className="mt-8 pt-8 border-t border-border/20 text-center">
           <p className="text-xs text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-            WARNING: This product contains nicotine. Nicotine is an addictive chemical. 
-            This product is intended for use by adults 21 years of age or older. 
-            Keep out of reach of children and pets. Not for sale to minors.
+            WARNING: This product contains nicotine. Nicotine is an addictive
+            chemical. This product is intended for use by adults 21 years of age
+            or older. Keep out of reach of children and pets. Not for sale to
+            minors.
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

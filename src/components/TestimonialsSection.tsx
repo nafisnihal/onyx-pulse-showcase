@@ -61,10 +61,11 @@ export const TestimonialsSection = () => {
             Testimonials
           </Badge>
           <h2 className="text-5xl lg:text-6xl font-extralight tracking-tight">
-            What Our <span className="gradient-primary bg-clip-text text-transparent">Customers</span> Say
+            What Our <span className=" ">Customers</span> Say
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Real feedback from real users who've experienced the INFLAVE difference.
+            Real feedback from real users who've experienced the INFLAVE
+            difference.
           </p>
         </div>
 
@@ -74,7 +75,7 @@ export const TestimonialsSection = () => {
             <div className="absolute top-6 left-6 text-primary/20 group-hover:text-primary/30 transition-smooth">
               <Quote className="w-12 h-12" />
             </div>
-            
+
             <div className="relative z-10 space-y-6">
               {/* Rating */}
               <div className="flex justify-center space-x-1">
@@ -95,13 +96,18 @@ export const TestimonialsSection = () => {
                 </div>
                 <div className="text-left">
                   <div className="flex items-center space-x-2">
-                    <h4 className="font-medium">{testimonials[activeTestimonial].name}</h4>
+                    <h4 className="font-medium">
+                      {testimonials[activeTestimonial].name}
+                    </h4>
                     {testimonials[activeTestimonial].verified && (
-                      <Badge variant="secondary" className="text-xs">Verified</Badge>
+                      <Badge variant="secondary" className="text-xs">
+                        Verified
+                      </Badge>
                     )}
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    {testimonials[activeTestimonial].role} at {testimonials[activeTestimonial].company}
+                    {testimonials[activeTestimonial].role} at{" "}
+                    {testimonials[activeTestimonial].company}
                   </p>
                 </div>
               </div>
@@ -118,7 +124,9 @@ export const TestimonialsSection = () => {
               key={index}
               onClick={() => setActiveTestimonial(index)}
               className={`w-3 h-3 rounded-full transition-smooth ${
-                index === activeTestimonial ? 'gradient-primary' : 'bg-border hover:bg-border/80'
+                index === activeTestimonial
+                  ? "gradient-primary"
+                  : "bg-border hover:bg-border/80"
               }`}
             />
           ))}
@@ -128,12 +136,15 @@ export const TestimonialsSection = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in">
           {[
             { metric: "4.9/5", label: "Average Rating" },
-            { metric: "10K+", label: "Reviews" }, 
+            { metric: "10K+", label: "Reviews" },
             { metric: "98%", label: "Recommend Us" },
-            { metric: "24h", label: "Support Response" }
+            { metric: "24h", label: "Support Response" },
           ].map((item, index) => (
-            <Card key={index} className="bento-card p-6 text-center hover:glow-accent group">
-              <div className="text-3xl font-extralight gradient-primary bg-clip-text text-transparent group-hover:animate-glow mb-2">
+            <Card
+              key={index}
+              className="bento-card p-6 text-center hover:glow-accent group"
+            >
+              <div className="text-3xl font-extralight gradient-primary  group-hover:animate-glow mb-2">
                 {item.metric}
               </div>
               <div className="text-muted-foreground text-sm">{item.label}</div>
@@ -142,5 +153,5 @@ export const TestimonialsSection = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
