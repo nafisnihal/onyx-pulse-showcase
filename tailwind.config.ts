@@ -57,6 +57,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// INFLAVE Color Palette
+				pink: 'hsl(var(--pink))',
+				green: 'hsl(var(--green))',
+				yellow: 'hsl(var(--yellow))',
+				blue: 'hsl(var(--blue))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

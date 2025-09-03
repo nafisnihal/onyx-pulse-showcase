@@ -51,7 +51,7 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
                 {product.name}
               </h2>
               <p className={`text-2xl font-light ${
-                product.accent === 'primary' ? 'text-primary' : 'text-accent'
+                product.accent === 'primary' ? 'text-pink' : 'text-green'
               }`}>
                 {product.tagline}
               </p>
@@ -67,8 +67,8 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
                   <div className="flex items-start space-x-4">
                     <div className={`p-3 rounded-2xl ${
                       product.accent === 'primary' 
-                        ? 'bg-primary/20 text-primary' 
-                        : 'bg-accent/20 text-accent'
+                        ? 'bg-pink/20 text-pink' 
+                        : 'bg-green/20 text-green'
                     }`}>
                       {feature.icon}
                     </div>
@@ -98,14 +98,14 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-right">
               <Button 
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth text-lg px-8 py-6"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth text-lg px-8 py-6 glow-pink"
               >
                 Shop {product.name}
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-border hover:border-foreground/50 text-lg px-8 py-6"
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth text-lg px-8 py-6"
               >
                 Learn More
               </Button>

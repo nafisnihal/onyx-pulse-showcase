@@ -56,29 +56,31 @@ export const HeroSection = () => {
                   <h1 className="text-7xl lg:text-8xl font-extralight tracking-tight">
                     {slide.title}
                   </h1>
-                  <p className="text-2xl text-primary font-light">
-                    {slide.subtitle}
-                  </p>
+                   <p className={`text-2xl font-light ${
+                     slide.title === 'ONYX' ? 'text-pink' : 'text-green'
+                   }`}>
+                     {slide.subtitle}
+                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
                     {slide.description}
                   </p>
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    size="lg" 
-                    className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth text-lg px-8 py-6"
-                  >
-                    {slide.cta}
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="lg"
-                    className="border-border hover:border-foreground/50 text-lg px-8 py-6"
-                  >
-                    <Play className="w-5 h-5 mr-2" />
-                    Watch Demo
-                  </Button>
+                   <Button 
+                     size="lg" 
+                     className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth text-lg px-8 py-6 glow-pink"
+                   >
+                     {slide.cta}
+                   </Button>
+                   <Button 
+                     variant="outline" 
+                     size="lg"
+                     className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth text-lg px-8 py-6"
+                   >
+                     <Play className="w-5 h-5 mr-2" />
+                     Watch Demo
+                   </Button>
                 </div>
               </div>
 

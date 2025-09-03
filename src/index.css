@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* INFLAVE Design System - Dark Premium Theme
-All colors MUST be HSL. Material-inspired with curved aesthetics.
+/* INFLAVE Design System - Dark Theme with Vibrant Accents
+All colors MUST be HSL. Inspired by INFLAVE's colorful dark aesthetic.
 */
 
 @layer base {
@@ -18,17 +18,17 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
     --popover: 220 13% 10%;
     --popover-foreground: 220 9% 96%;
 
-    /* Minimal Brand Colors */
-    --primary: 220 9% 96%;
-    --primary-foreground: 220 13% 8%;
-    --primary-glow: 220 9% 85%;
+    /* INFLAVE-inspired Brand Colors */
+    --primary: 318 100% 70%;
+    --primary-foreground: 220 9% 96%;
+    --primary-glow: 318 100% 80%;
     
     --secondary: 220 13% 15%;
     --secondary-foreground: 220 9% 96%;
 
-    --accent: 220 9% 85%;
+    --accent: 140 100% 60%;
     --accent-foreground: 220 13% 8%;
-    --accent-glow: 220 9% 75%;
+    --accent-glow: 140 100% 70%;
 
     --muted: 220 13% 15%;
     --muted-foreground: 220 9% 65%;
@@ -38,19 +38,23 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
 
     --border: 220 13% 18%;
     --input: 220 13% 18%;
-    --ring: 262 83% 58%;
+    --ring: 318 100% 70%;
 
     --radius: 1rem;
 
-    /* Minimal Backgrounds */
-    --gradient-primary: hsl(220 9% 96%);
-    --gradient-secondary: hsl(220 13% 15%);
+    /* INFLAVE Color Palette */
+    --pink: 318 100% 70%;
+    --green: 140 100% 60%;
+    --yellow: 48 100% 67%;
+    --blue: 199 89% 48%;
+    
+    /* Backgrounds */
     --gradient-hero: hsl(220 13% 8%);
     --gradient-card: hsl(220 13% 12%);
     
-    /* Minimal Effects */
-    --glow-primary: 0 0 0px transparent;
-    --glow-accent: 0 0 0px transparent;
+    /* Effects */
+    --glow-pink: 0 0 30px hsl(318 100% 70% / 0.3);
+    --glow-green: 0 0 30px hsl(140 100% 60% / 0.3);
     --shadow-premium: 0 4px 20px hsl(220 13% 4% / 0.5);
     --shadow-card: 0 2px 10px hsl(220 13% 4% / 0.3);
     
@@ -59,7 +63,7 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
     --transition-spring: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
-  /* Dark mode uses same values since we're already dark */
+  /* Dark mode - same as root */
   .dark {
     --background: 220 13% 8%;
     --foreground: 220 9% 96%;
@@ -67,33 +71,24 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
     --card-foreground: 220 9% 96%;
     --popover: 220 13% 10%;
     --popover-foreground: 220 9% 96%;
-    --primary: 262 83% 58%;
+    --primary: 318 100% 70%;
     --primary-foreground: 220 9% 96%;
     --secondary: 220 13% 15%;
     --secondary-foreground: 220 9% 96%;
     --muted: 220 13% 15%;
     --muted-foreground: 220 9% 65%;
-    --accent: 199 89% 48%;
-    --accent-foreground: 220 9% 96%;
+    --accent: 140 100% 60%;
+    --accent-foreground: 220 13% 8%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 220 9% 96%;
     --border: 220 13% 18%;
     --input: 220 13% 18%;
-    --ring: 262 83% 58%;
+    --ring: 318 100% 70%;
   }
 }
 
-/* Premium Component Utilities */
+/* INFLAVE Component Utilities */
 @layer utilities {
-  .gradient-primary {
-    background: var(--gradient-primary);
-    color: var(--primary-foreground);
-  }
-  
-  .gradient-secondary {
-    background: var(--gradient-secondary);
-  }
-  
   .gradient-hero {
     background: var(--gradient-hero);
   }
@@ -102,12 +97,12 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
     background: var(--gradient-card);
   }
   
-  .glow-primary {
-    box-shadow: var(--glow-primary);
+  .glow-pink {
+    box-shadow: var(--glow-pink);
   }
   
-  .glow-accent {
-    box-shadow: var(--glow-accent);
+  .glow-green {
+    box-shadow: var(--glow-green);
   }
   
   .shadow-premium {
@@ -128,6 +123,22 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
   
   .bento-card {
     @apply rounded-3xl gradient-card border-border/20 shadow-card transition-smooth hover:shadow-premium;
+  }
+  
+  .text-pink {
+    color: hsl(var(--pink));
+  }
+  
+  .text-green {
+    color: hsl(var(--green));
+  }
+  
+  .text-yellow {
+    color: hsl(var(--yellow));
+  }
+  
+  .text-blue {
+    color: hsl(var(--blue));
   }
 }
 
