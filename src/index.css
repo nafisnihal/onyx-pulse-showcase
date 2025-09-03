@@ -18,17 +18,17 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
     --popover: 220 13% 10%;
     --popover-foreground: 220 9% 96%;
 
-    /* Premium Brand Colors */
-    --primary: 262 83% 58%;
-    --primary-foreground: 220 9% 96%;
-    --primary-glow: 262 83% 68%;
+    /* Minimal Brand Colors */
+    --primary: 220 9% 96%;
+    --primary-foreground: 220 13% 8%;
+    --primary-glow: 220 9% 85%;
     
     --secondary: 220 13% 15%;
     --secondary-foreground: 220 9% 96%;
 
-    --accent: 199 89% 48%;
-    --accent-foreground: 220 9% 96%;
-    --accent-glow: 199 89% 58%;
+    --accent: 220 9% 85%;
+    --accent-foreground: 220 13% 8%;
+    --accent-glow: 220 9% 75%;
 
     --muted: 220 13% 15%;
     --muted-foreground: 220 9% 65%;
@@ -42,17 +42,17 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
 
     --radius: 1rem;
 
-    /* Premium Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(199 89% 48%));
-    --gradient-secondary: linear-gradient(135deg, hsl(220 13% 15%), hsl(220 13% 10%));
-    --gradient-hero: linear-gradient(180deg, hsl(220 13% 8%) 0%, hsl(220 13% 4%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 13% 12%), hsl(220 13% 8%));
+    /* Minimal Backgrounds */
+    --gradient-primary: hsl(220 9% 96%);
+    --gradient-secondary: hsl(220 13% 15%);
+    --gradient-hero: hsl(220 13% 8%);
+    --gradient-card: hsl(220 13% 12%);
     
-    /* Glows & Effects */
-    --glow-primary: 0 0 40px hsl(262 83% 58% / 0.3);
-    --glow-accent: 0 0 40px hsl(199 89% 48% / 0.3);
-    --shadow-premium: 0 25px 50px -12px hsl(220 13% 4% / 0.8);
-    --shadow-card: 0 8px 32px hsl(220 13% 4% / 0.6);
+    /* Minimal Effects */
+    --glow-primary: 0 0 0px transparent;
+    --glow-accent: 0 0 0px transparent;
+    --shadow-premium: 0 4px 20px hsl(220 13% 4% / 0.5);
+    --shadow-card: 0 2px 10px hsl(220 13% 4% / 0.3);
     
     /* Animation */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -87,6 +87,7 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
 @layer utilities {
   .gradient-primary {
     background: var(--gradient-primary);
+    color: var(--primary-foreground);
   }
   
   .gradient-secondary {
@@ -137,7 +138,6 @@ All colors MUST be HSL. Material-inspired with curved aesthetics.
 
   body {
     @apply bg-background text-foreground font-inter antialiased;
-    background: var(--gradient-hero);
   }
   
   /* Smooth scroll behavior */

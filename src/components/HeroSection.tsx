@@ -36,9 +36,8 @@ export const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with parallax effect */}
-      <div className="absolute inset-0 gradient-hero">
-        <div className="absolute inset-0 bg-black/20" />
+      {/* Background */}
+      <div className="absolute inset-0 bg-background">
       </div>
 
       {/* Carousel */}
@@ -68,14 +67,14 @@ export const HeroSection = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
                     size="lg" 
-                    className="gradient-primary glow-primary hover:scale-105 transition-spring text-lg px-8 py-6"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth text-lg px-8 py-6"
                   >
                     {slide.cta}
                   </Button>
                   <Button 
                     variant="outline" 
                     size="lg"
-                    className="border-border/50 hover:border-primary/50 text-lg px-8 py-6"
+                    className="border-border hover:border-foreground/50 text-lg px-8 py-6"
                   >
                     <Play className="w-5 h-5 mr-2" />
                     Watch Demo
@@ -90,7 +89,7 @@ export const HeroSection = () => {
                   alt={slide.title}
                   className="w-full h-auto max-w-lg mx-auto object-contain drop-shadow-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl blur-3xl" />
+                
               </div>
             </div>
           </div>
@@ -114,7 +113,7 @@ export const HeroSection = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-smooth ${
-                index === currentSlide ? 'gradient-primary' : 'bg-border'
+                index === currentSlide ? 'bg-primary' : 'bg-border'
               }`}
             />
           ))}

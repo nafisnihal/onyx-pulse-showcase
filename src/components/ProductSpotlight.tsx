@@ -38,9 +38,6 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
                 alt={product.name}
                 className="w-full h-auto max-w-lg mx-auto object-contain animate-float transition-spring group-hover:scale-105"
               />
-              <div className={`absolute inset-0 bg-gradient-to-br ${
-                product.accent === 'primary' ? 'from-primary/30' : 'from-accent/30'
-              } to-transparent rounded-3xl blur-3xl opacity-60`} />
             </div>
           </div>
 
@@ -101,16 +98,14 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-right">
               <Button 
                 size="lg"
-                className={`${
-                  product.accent === 'primary' ? 'gradient-primary' : 'bg-accent hover:bg-accent/90'
-                } glow-primary hover:scale-105 transition-spring text-lg px-8 py-6`}
+                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth text-lg px-8 py-6"
               >
                 Shop {product.name}
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-border/50 hover:border-primary/50 text-lg px-8 py-6"
+                className="border-border hover:border-foreground/50 text-lg px-8 py-6"
               >
                 Learn More
               </Button>
