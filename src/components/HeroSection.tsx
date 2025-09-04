@@ -14,8 +14,7 @@ export const HeroSection = () => {
         "https://inflave.com/wp-content/uploads/2024/08/banner_pulse_desktop.mp4",
       title: "Pulse",
       puff: "240000 puffs",
-      poster:
-        "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      poster: "/src/assets/pulseframe.png",
     },
     {
       type: "video",
@@ -23,8 +22,7 @@ export const HeroSection = () => {
         "https://inflave.com/wp-content/uploads/2024/11/onyx_desktop2-1.mp4",
       title: "Onyx ",
       puff: "300000 puffs",
-      poster:
-        "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      poster: "/src/assets/onyxframe.png",
     },
   ];
 
