@@ -1,27 +1,25 @@
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
-import { Zap, Shield, Cpu, Droplet } from 'lucide-react'
-
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { Cpu, Droplet, Shield, Zap } from "lucide-react";
 
 interface ProductSpotlightProps {
   product: {
-    name: string
-    tagline: string
-    description: string
-    image: string
+    name: string;
+    tagline: string;
+    description: string;
+    image: string;
     features: Array<{
-      icon: React.ReactNode
-      title: string
-      description: string
-    }>
+      icon: React.ReactNode;
+      title: string;
+      description: string;
+    }>;
     specs: Array<{
-      label: string
-      value: string
-    }>
-    accent: string
-    reversed?: boolean
-  }
+      label: string;
+      value: string;
+    }>;
+    accent: string;
+    reversed?: boolean;
+  };
 }
 
 export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
@@ -126,7 +124,7 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
       </div>
     </section>
   );
-}
+};
 
 // Product data
 export const onyxProduct = {
@@ -134,7 +132,7 @@ export const onyxProduct = {
   tagline: "Pure. Powerful. Premium.",
   description:
     "Our flagship device combines sleek aesthetics with uncompromising performance. Engineered for discerning users who demand the very best.",
-  image: "/src/assets/pluse.png",
+  image: "/src/assets/onyx.png",
   accent: "primary" as const,
   features: [
     {
@@ -170,36 +168,37 @@ export const onyxProduct = {
 export const pulseProduct = {
   name: "PULSE",
   tagline: "Innovation. Redefined.",
-  description: "Next-generation pod system that pushes the boundaries of what's possible. Experience the future of vaping technology today.",
-  image: "/src/assets/pulse-hero.jpg",
+  description:
+    "Next-generation pod system that pushes the boundaries of what's possible. Experience the future of vaping technology today.",
+  image: "/src/assets/pluse.png",
   accent: "accent" as const,
   reversed: true,
   features: [
     {
       icon: <Cpu className="w-5 h-5" />,
       title: "AI Assistant",
-      description: "Built-in intelligence that learns your preferences."
+      description: "Built-in intelligence that learns your preferences.",
     },
     {
       icon: <Droplet className="w-5 h-5" />,
       title: "Auto-Fill",
-      description: "Magnetic pod system with automatic liquid detection."
+      description: "Magnetic pod system with automatic liquid detection.",
     },
     {
       icon: <Zap className="w-5 h-5" />,
       title: "Wireless Charging",
-      description: "Qi-compatible wireless charging for ultimate convenience."
+      description: "Qi-compatible wireless charging for ultimate convenience.",
     },
     {
       icon: <Shield className="w-5 h-5" />,
       title: "Child Lock",
-      description: "Advanced biometric security for peace of mind."
-    }
+      description: "Advanced biometric security for peace of mind.",
+    },
   ],
   specs: [
     { label: "Battery", value: "2000mAh" },
     { label: "Output", value: "100W Max" },
     { label: "Capacity", value: "6ml" },
-    { label: "Charging", value: "Wireless" }
-  ]
-}
+    { label: "Charging", value: "Wireless" },
+  ],
+};

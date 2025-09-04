@@ -1,7 +1,6 @@
-import { useState, useEffect, useRef } from "react";
-import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Slider } from "@radix-ui/react-slider";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -113,12 +112,11 @@ export const HeroSection = () => {
                     }}
                   >
                     <source src={slide.video} type="video/mp4" />
-                    Your browser does not support the video tag.
                   </video>
 
-                  <div className="absolute bottom-32 left-48 ">
+                  <div className="absolute bottom-32 left-1/4 transform -translate-x-1/2">
                     <h1 className="text-7xl font-bold">{slide.title}</h1>
-                    <p className="pt-5  text-xl">{slide.puff}</p>
+                    <p className="pt-5 pl-2 text-xl">{slide.puff}</p>
                   </div>
                 </div>
               )}

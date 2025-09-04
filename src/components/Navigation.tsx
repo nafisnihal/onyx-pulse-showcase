@@ -1,31 +1,30 @@
-import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export const Navigation = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
-    { label: 'Products', href: '#products' },
-    { label: 'Features', href: '#features' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' }
-  ]
+    { label: "Products", href: "#products" },
+    { label: "Features", href: "#features" },
+    { label: "Contact", href: "#contact" },
+  ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
         isScrolled
-          ? "gradient-secondary backdrop-blur-lg shadow-premium border-b border-border/50"
+          ? "gradient-secondary backdrop-blur-lg shadow-premium"
           : "bg-transparent"
       }`}
     >
@@ -39,7 +38,7 @@ export const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-smooth relative group text-white"
+                className=" hover:text-foreground transition-smooth relative group text-white font-thin"
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 gradient-primary group-hover:w-full transition-smooth duration-300" />
@@ -90,4 +89,4 @@ export const Navigation = () => {
       </div>
     </nav>
   );
-}
+};
