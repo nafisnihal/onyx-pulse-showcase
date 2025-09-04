@@ -137,23 +137,6 @@ export const FeaturesSection = () => {
             </Card>
           ))}
         </div>
-
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 animate-fade-in">
-          {[
-            { value: "500K+", label: "Happy Customers" },
-            { value: "50+", label: "Countries" },
-            { value: "98%", label: "Satisfaction Rate" },
-            { value: "24/7", label: "Support" },
-          ].map((stat, index) => (
-            <div key={index} className="text-center group">
-              <div className="text-4xl font-extralight gradient-primary group-hover:animate-glow">
-                {stat.value}
-              </div>
-              <div className="text-muted-foreground mt-2">{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

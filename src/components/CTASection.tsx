@@ -60,28 +60,6 @@ export const CTASection = () => {
                 Explore Products
               </Button>
             </div>
-
-            {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border/20">
-              <div className="text-center">
-                <div className="text-2xl font-extralight gradient-primary ">
-                  Free
-                </div>
-                <div className="text-sm text-muted-foreground">Shipping</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-extralight gradient-primary ">
-                  30-Day
-                </div>
-                <div className="text-sm text-muted-foreground">Returns</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-extralight gradient-primary ">
-                  24/7
-                </div>
-                <div className="text-sm text-muted-foreground">Support</div>
-              </div>
-            </div>
           </div>
         </Card>
 

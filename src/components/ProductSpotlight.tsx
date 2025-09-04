@@ -132,38 +132,40 @@ export const ProductSpotlight = ({ product }: ProductSpotlightProps) => {
 export const onyxProduct = {
   name: "ONYX",
   tagline: "Pure. Powerful. Premium.",
-  description: "Our flagship device combines sleek aesthetics with uncompromising performance. Engineered for discerning users who demand the very best.",
-  image: "/src/assets/onyx-hero.jpg",
+  description:
+    "Our flagship device combines sleek aesthetics with uncompromising performance. Engineered for discerning users who demand the very best.",
+  image: "/src/assets/pluse.png",
   accent: "primary" as const,
   features: [
     {
       icon: <Zap className="w-5 h-5" />,
       title: "Rapid Charge",
-      description: "0-80% in just 15 minutes with our advanced charging technology."
+      description:
+        "0-80% in just 15 minutes with our advanced charging technology.",
     },
     {
       icon: <Shield className="w-5 h-5" />,
       title: "Premium Build",
-      description: "Aircraft-grade aluminum with precision CNC machining."
+      description: "Aircraft-grade aluminum with precision CNC machining.",
     },
     {
       icon: <Cpu className="w-5 h-5" />,
       title: "Smart Chip",
-      description: "AI-powered optimization for consistent performance."
+      description: "AI-powered optimization for consistent performance.",
     },
     {
       icon: <Droplet className="w-5 h-5" />,
       title: "Leak-Proof",
-      description: "Revolutionary seal technology ensures zero leakage."
-    }
+      description: "Revolutionary seal technology ensures zero leakage.",
+    },
   ],
   specs: [
     { label: "Battery", value: "1200mAh" },
     { label: "Output", value: "80W Max" },
     { label: "Capacity", value: "4.5ml" },
-    { label: "Material", value: "Aluminum" }
-  ]
-}
+    { label: "Material", value: "Aluminum" },
+  ],
+};
 
 export const pulseProduct = {
   name: "PULSE",

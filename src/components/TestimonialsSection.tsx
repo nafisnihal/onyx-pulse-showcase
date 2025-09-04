@@ -131,26 +131,6 @@ export const TestimonialsSection = () => {
             />
           ))}
         </div>
-
-        {/* Trust Indicators */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in">
-          {[
-            { metric: "4.9/5", label: "Average Rating" },
-            { metric: "10K+", label: "Reviews" },
-            { metric: "98%", label: "Recommend Us" },
-            { metric: "24h", label: "Support Response" },
-          ].map((item, index) => (
-            <Card
-              key={index}
-              className="bento-card p-6 text-center hover:glow-accent group"
-            >
-              <div className="text-3xl font-extralight gradient-primary  group-hover:animate-glow mb-2">
-                {item.metric}
-              </div>
-              <div className="text-muted-foreground text-sm">{item.label}</div>
-            </Card>
-          ))}
-        </div>
       </div>
     </section>
   );
