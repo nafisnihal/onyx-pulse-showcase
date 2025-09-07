@@ -1,8 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Cpu, Droplet, Shield, Zap } from "lucide-react";
-import pulseImg from "@/assets/pluse.png";
-import onyxImg from "@/assets/onyx.png";
 
 interface ProductSpotlightProps {
   product: {
@@ -134,17 +132,73 @@ export const onyxProduct = {
   tagline: "Pure. Powerful. Premium.",
   description:
     "Our flagship device combines sleek aesthetics with uncompromising performance. Engineered for discerning users who demand the very best.",
-  image: onyxImg, // ✅ imported
+  image: "/onyx.png",
   accent: "primary" as const,
-  // ...
+  features: [
+    {
+      icon: <Zap className="w-5 h-5" />,
+      title: "Rapid Charge",
+      description:
+        "0-80% in just 15 minutes with our advanced charging technology.",
+    },
+    {
+      icon: <Shield className="w-5 h-5" />,
+      title: "Premium Build",
+      description: "Aircraft-grade aluminum with precision CNC machining.",
+    },
+    {
+      icon: <Cpu className="w-5 h-5" />,
+      title: "Smart Chip",
+      description: "AI-powered optimization for consistent performance.",
+    },
+    {
+      icon: <Droplet className="w-5 h-5" />,
+      title: "Leak-Proof",
+      description: "Revolutionary seal technology ensures zero leakage.",
+    },
+  ],
+  specs: [
+    { label: "Battery", value: "1200mAh" },
+    { label: "Output", value: "80W Max" },
+    { label: "Capacity", value: "4.5ml" },
+    { label: "Material", value: "Aluminum" },
+  ],
 };
+
 export const pulseProduct = {
   name: "PULSE",
   tagline: "Innovation. Redefined.",
   description:
     "Next-generation pod system that pushes the boundaries of what's possible. Experience the future of vaping technology today.",
-  image: pulseImg, // ✅ imported
+  image: "/pluse.png",
   accent: "accent" as const,
   reversed: true,
-  // ...
+  features: [
+    {
+      icon: <Cpu className="w-5 h-5" />,
+      title: "AI Assistant",
+      description: "Built-in intelligence that learns your preferences.",
+    },
+    {
+      icon: <Droplet className="w-5 h-5" />,
+      title: "Auto-Fill",
+      description: "Magnetic pod system with automatic liquid detection.",
+    },
+    {
+      icon: <Zap className="w-5 h-5" />,
+      title: "Wireless Charging",
+      description: "Qi-compatible wireless charging for ultimate convenience.",
+    },
+    {
+      icon: <Shield className="w-5 h-5" />,
+      title: "Child Lock",
+      description: "Advanced biometric security for peace of mind.",
+    },
+  ],
+  specs: [
+    { label: "Battery", value: "2000mAh" },
+    { label: "Output", value: "100W Max" },
+    { label: "Capacity", value: "6ml" },
+    { label: "Charging", value: "Wireless" },
+  ],
 };
