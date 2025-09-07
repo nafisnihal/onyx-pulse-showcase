@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Cpu, Droplet, Shield, Zap } from "lucide-react";
+import pulse from "/pulse.png";
 
 interface ProductSpotlightProps {
   product: {
@@ -132,7 +133,7 @@ export const onyxProduct = {
   tagline: "Pure. Powerful. Premium.",
   description:
     "Our flagship device combines sleek aesthetics with uncompromising performance. Engineered for discerning users who demand the very best.",
-  image: "/onyx.png",
+  image: "https://inflave.com/wp-content/uploads/2024/10/inflave-onyx-min.png",
   accent: "primary" as const,
   features: [
     {
@@ -170,7 +171,7 @@ export const pulseProduct = {
   tagline: "Innovation. Redefined.",
   description:
     "Next-generation pod system that pushes the boundaries of what's possible. Experience the future of vaping technology today.",
-  image: "/pluse.png",
+  image: pulse,
   accent: "accent" as const,
   reversed: true,
   features: [
