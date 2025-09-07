@@ -1,6 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Cpu, Droplet, Shield, Zap } from "lucide-react";
+import imgFlex from "../assets/pluse.png";
+import imgOnix from "../assets/onyx.png";
 
 interface ProductSpotlightProps {
   product: {
@@ -132,7 +134,7 @@ export const onyxProduct = {
   tagline: "Pure. Powerful. Premium.",
   description:
     "Our flagship device combines sleek aesthetics with uncompromising performance. Engineered for discerning users who demand the very best.",
-  image: "./src/assets/onyx.png",
+  image: { imgFlex },
   accent: "primary" as const,
   features: [
     {
@@ -170,7 +172,7 @@ export const pulseProduct = {
   tagline: "Innovation. Redefined.",
   description:
     "Next-generation pod system that pushes the boundaries of what's possible. Experience the future of vaping technology today.",
-  image: "./src/assets/pluse.png",
+  image: { imgOnix },
   accent: "accent" as const,
   reversed: true,
   features: [

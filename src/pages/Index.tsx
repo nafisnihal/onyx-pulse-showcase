@@ -5,6 +5,7 @@ import { FeaturesSection } from "@/components/FeaturesSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
+import { AboutSection } from "@/components/AboutSection";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
           <ProductSpotlight product={pulseProduct} />
         </section>
         <FeaturesSection />
+        <AboutSection></AboutSection>
         <TestimonialsSection />
         <CTASection />
       </main>
