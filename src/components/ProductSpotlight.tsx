@@ -132,7 +132,7 @@ export const onyxProduct = {
   tagline: "Pure. Powerful. Premium.",
   description:
     "Our flagship device combines sleek aesthetics with uncompromising performance. Engineered for discerning users who demand the very best.",
-  image: "https://inflave.com/wp-content/uploads/2024/10/inflave-onyx-min.png",
+  image: "/onyx.png",
   accent: "primary" as const,
   features: [
     {
