@@ -132,7 +132,7 @@ export const onyxProduct = {
   tagline: "Pure. Powerful. Premium.",
   description:
     "Our flagship device combines sleek aesthetics with uncompromising performance. Engineered for discerning users who demand the very best.",
-  image: "/src/assets/onyx.png",
+  image: "./src/assets/onyx.png",
   accent: "primary" as const,
   features: [
     {
@@ -170,7 +170,7 @@ export const pulseProduct = {
   tagline: "Innovation. Redefined.",
   description:
     "Next-generation pod system that pushes the boundaries of what's possible. Experience the future of vaping technology today.",
-  image: "/src/assets/pluse.png",
+  image: "./src/assets/pluse.png",
   accent: "accent" as const,
   reversed: true,
   features: [
