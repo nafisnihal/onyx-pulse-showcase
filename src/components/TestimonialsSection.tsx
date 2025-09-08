@@ -1,68 +1,58 @@
-import { useState, useEffect } from 'react'
-import { Card } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Star, Quote } from 'lucide-react'
-import testImg from "../assets/onyxframe.png";
-
 export const TestimonialsSection = () => {
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
-
-  const testimonials = [
-    {
-      image: "/public/onyx.png",
-    },
-    {
-      image: "/public/pluse.png",
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
-
   return (
-    <section className="  pt-24 relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        {/* Main Testimonial Display */}
-        <div className="">
-          <Card className="bento-card text-center relative overflow-hidden group hover:glow-primary animate-scale-in">
-            <div className="relative z-10 ">
-              {/* Author Info */}
-              <div className="flex items-center justify-center ">
-                <div className="">
-                  <div className="flex items-center ">
-                    <img
-                      src={testimonials[activeTestimonial].image} // ✅ correct way
-                      alt="User"
-                      className="w-[800px] h-[700px] "
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div className="mt-24">
+      <div className="flex justify-center">
+        <h1 className="text-2xl font-bold  border-2 border-white inline-block p-2 ">
+          MORE ABOUT INFLAVE
+        </h1>
+      </div>
+      <div className="lg:flex container mx-auto px-6 gap-8 my-20">
+        {/*
+         */}
 
-            <div className="absolute inset-0 gradient-primary opacity-5 group-hover:opacity-10 transition-smooth" />
-          </Card>
+        <div className="relative mt-10 overflow-hidden group">
+          <img
+            src="/public/experience-list1.jpg"
+            alt="experience"
+            className="transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute left-5 bottom-16">
+            <h2 className="text-2xl font-semibold">INNOVATION</h2>
+            <p className="text-sm">memorable and compact devices</p>
+          </div>
         </div>
 
-        {/* Testimonial Navigation */}
-        <div className="flex justify-center space-x-2 mb-16">
-          {testimonials.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTestimonial(index)}
-              className={`w-3 h-3 rounded-full transition-smooth ${
-                index === activeTestimonial
-                  ? "gradient-primary"
-                  : "bg-border hover:bg-border/80"
-              }`}
-            />
-          ))}
+        <div className="relative mt-20 overflow-hidden group">
+          <img
+            src="/public/experience-list2.jpg"
+            className="transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute left-5 bottom-16">
+            <h2 className="text-2xl font-semibold">INNOVATION</h2>
+            <p className="text-sm"> memorable and compact devices</p>
+          </div>
+        </div>
+        <div className="relative overflow-hidden group">
+          <img
+            src="/public/experience-list3.jpg"
+            className="transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute left-5 bottom-10">
+            <h2 className="text-2xl font-semibold">DIGITAL FACTORY</h2>
+            <p className="text-sm">disposable electronic cigarettes </p>
+          </div>
+        </div>
+        <div className="relative overflow-hidden group mt-10">
+          <img
+            src="/public/experience-list4.jpg"
+            className="transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute left-5 bottom-28">
+            <h2 className="text-2xl font-semibold">DESIGN</h2>
+            <p className="text-sm">active and comfortable use</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

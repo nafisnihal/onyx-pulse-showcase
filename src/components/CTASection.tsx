@@ -42,24 +42,6 @@ export const CTASection = () => {
                 Limited Time: Free shipping on all orders over $100
               </span>
             </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="gradient-primary glow-primary hover:scale-105 transition-spring text-lg px-8 py-6 group"
-              >
-                Shop Now
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-border/50 hover:border-primary/50 text-lg px-8 py-6"
-              >
-                Explore Products
-              </Button>
-            </div>
           </div>
         </Card>
       </div>

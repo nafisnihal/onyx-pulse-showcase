@@ -100,7 +100,7 @@ export const HeroSection = () => {
               className={`absolute inset-0 transition-opacity duration-1000 ${
                 index === currentSlide ? "opacity-100" : "opacity-0"
               }`}
-            >
+            >  
               {slide.type === "video" && (
                 <div className="relative w-full h-full flex items-center justify-center">
                   <video
