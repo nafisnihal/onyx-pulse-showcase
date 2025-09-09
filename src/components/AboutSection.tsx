@@ -1,18 +1,21 @@
 import Marquee from "react-fast-marquee";
-import img1 from "../assets/union.svg";
+
 
 export const AboutSection = () => {
   return (
     <div>
-      <Marquee speed={300}>
+      <Marquee speed={200} className=" ">
         <div>
-          <img className="w-30 h-32" src={img1} />
+          <img className="w-30 h-32 mr-16" src="/public/union (1).png" />
         </div>
         <div>
-          <img className="w-30 h-32" src={img1} />
+          <img className="w-30 h-32 mr-16" src="/public/union (1).png" />
         </div>
         <div>
-          <img className="w-30 h-32" src={img1} />
+          <img className="w-30 h-32 mr-16" src="/public/union (1).png" />
+        </div>
+        <div>
+          <img className="w-30 h-32 mr-16" src="/public/union (1).png" />
         </div>
       </Marquee>
     </div>

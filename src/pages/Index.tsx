@@ -6,6 +6,8 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import { AboutSection } from "@/components/AboutSection";
+import { VoopooJourney } from "@/components/VoopooJourney";
+import { FeatureSwiper } from "@/components/FeatureSwiper";
 
 const Index = () => {
   return (
@@ -14,10 +16,13 @@ const Index = () => {
 
       <main>
         <HeroSection />
+        <VoopooJourney></VoopooJourney>
         <section id="products" className="relative">
           <ProductSpotlight product={onyxProduct} />
           <ProductSpotlight product={pulseProduct} />
         </section>
+
+        <FeatureSwiper></FeatureSwiper>
         <FeaturesSection />
         <AboutSection></AboutSection>
         <TestimonialsSection />

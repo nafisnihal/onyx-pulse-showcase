@@ -15,6 +15,10 @@ export const HeroSection = () => {
       title: "Pulse",
       puff: "240000 puffs",
       poster: "/src/assets/pulseframe.png",
+      body: "Durable metal ",
+      charge: "Charging port",
+      light: "LED backlight",
+      display: "Digital display",
     },
     {
       type: "video",
@@ -23,6 +27,10 @@ export const HeroSection = () => {
       title: "Onyx ",
       puff: "300000 puffs",
       poster: "/src/assets/onyxframe.png",
+      body: "Lumines metal ",
+      charge: "Charging port",
+      light: "Soft-touch coating",
+      display: "Digital display",
     },
   ];
 
@@ -92,7 +100,7 @@ export const HeroSection = () => {
               className={`absolute inset-0 transition-opacity duration-1000 ${
                 index === currentSlide ? "opacity-100" : "opacity-0"
               }`}
-            >
+            >  
               {slide.type === "video" && (
                 <div className="relative w-full h-full flex items-center justify-center">
                   <video
@@ -112,9 +120,25 @@ export const HeroSection = () => {
                     <source src={slide.video} type="video/mp4" />
                   </video>
 
-                  <div className="absolute bottom-32 left-1/4 transform -translate-x-1/2">
-                    <h1 className="text-7xl font-bold">{slide.title}</h1>
-                    <p className="pt-5 pl-2 text-xl">{slide.puff}</p>
+                  <div className="absolute flex justify-between items-end w-full bottom-0 p-48 ">
+                    <div>
+                      <h1 className="text-7xl font-bold">{slide.title}</h1>
+                      <p className="pt-5 pl-2 text-xl">{slide.puff}</p>
+                    </div>
+                    <div className=" space-y-3">
+                      <div className="flex justify-center items-center">
+                        <img className="w-8 h-8" src="/public/flex_2.svg" />
+                        <p className=" pl-2 font-thin">{slide.body}</p>
+                      </div>
+                      <div className="flex justify-center items-center">
+                        <img className="w-8 h-8" src="/public/flex_3.svg" />
+                        <p className=" pl-2 font-thin">{slide.display}</p>
+                      </div>
+                      <div className="flex justify-center items-center">
+                        <img className="w-8 h-8" src="/public/flex_4.svg" />
+                        <p className=" pl-2 font-thin">{slide.charge}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
