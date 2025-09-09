@@ -114,7 +114,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-end items-center absolute bottom-16 right-7">
+        <div className="lg:flex flex-col md:flex-row justify-end items-center absolute lg:bottom-16 lg:right-7 py-2">
           {/* Social Links */}
           <div className="flex items-center space-x-4">
             <span className="text-muted-foreground text-sm mr-4">
