@@ -17,7 +17,7 @@ export const VoopooJourney = () => {
             className="brightness-50 group-hover:brightness-100 transition-all ease-in-out duration-200"
           />
           <h1 className="text-3xl font-bold absolute left-64 bottom-12">
-            ARGUES SERIES
+            ONYX SERIES
           </h1>
         </div>
         <div className="relative group cursor-pointer">
@@ -26,7 +26,7 @@ export const VoopooJourney = () => {
             className="brightness-50 group-hover:brightness-100 transition-all ease-in-out duration-200"
           />
           <h1 className="text-3xl font-bold absolute left-64 bottom-12">
-            DRAG SERIES
+            INFLAVE SERIES
           </h1>
         </div>
         <div className="relative group cursor-pointer">

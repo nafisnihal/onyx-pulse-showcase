@@ -7,9 +7,6 @@ export const TestimonialsSection = () => {
         </h1>
       </div>
       <div className="lg:flex container mx-auto px-6 gap-8 my-20">
-        {/*
-         */}
-
         <div className="relative mt-10 overflow-hidden group">
           <img
             src="/public/experience-list1.jpg"

@@ -17,9 +17,9 @@ export const FeatureSwiper = () => {
         grabCursor
         modules={[Pagination, Navigation, Autoplay]}
         autoplay={{
-          delay: 2000, // 3s delay
-          disableOnInteraction: false, // keep autoplay after user swipes
-          pauseOnMouseEnter: true, // pause when hovering
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
         pagination={{
           el: ".custom-pagination",
