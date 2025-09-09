@@ -9,7 +9,7 @@ export const TestimonialsSection = () => {
       <div className="lg:flex container mx-auto px-6 gap-8 my-20">
         <div className="relative mt-10 overflow-hidden group">
           <img
-            src="/public/experience-list1.jpg"
+            src="/experience-list1.jpg"
             alt="experience"
             className="transition-transform duration-500 group-hover:scale-110"
           />
@@ -21,7 +21,7 @@ export const TestimonialsSection = () => {
 
         <div className="relative mt-20 overflow-hidden group">
           <img
-            src="/public/experience-list2.jpg"
+            src="/experience-list2.jpg"
             className="transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute left-5 bottom-16">
@@ -31,7 +31,7 @@ export const TestimonialsSection = () => {
         </div>
         <div className="relative overflow-hidden group">
           <img
-            src="/public/experience-list3.jpg"
+            src="/experience-list3.jpg"
             className="transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute left-5 bottom-10">
@@ -41,7 +41,7 @@ export const TestimonialsSection = () => {
         </div>
         <div className="relative overflow-hidden group mt-10">
           <img
-            src="/public/experience-list4.jpg"
+            src="/experience-list4.jpg"
             className="transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute left-5 bottom-28">

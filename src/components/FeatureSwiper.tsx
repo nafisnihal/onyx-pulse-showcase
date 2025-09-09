@@ -37,16 +37,16 @@ export const FeatureSwiper = () => {
           <img src="/argus_pc.jpg" alt="slide1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/v_pc.jpg" alt="slide2" />
+          <img src="/v_pc.jpg" alt="slide2" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/vinci_pc_37.jpg" alt="slide3" />
+          <img src="/vinci_pc_37.jpg" alt="slide3" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="/argus_pc.jpg" alt="slide4" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/vinci_pc_37.jpg" alt="slide5" />
+          <img src="/vinci_pc_37.jpg" alt="slide5" />
         </SwiperSlide>
       </Swiper>
 
