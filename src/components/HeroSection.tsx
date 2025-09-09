@@ -100,7 +100,7 @@ export const HeroSection = () => {
               className={`absolute inset-0 transition-opacity duration-1000 ${
                 index === currentSlide ? "opacity-100" : "opacity-0"
               }`}
-            >  
+            >
               {slide.type === "video" && (
                 <div className="relative w-full h-full flex items-center justify-center">
                   <video
@@ -127,15 +127,15 @@ export const HeroSection = () => {
                     </div>
                     <div className=" space-y-3">
                       <div className="flex justify-center items-center">
-                        <img className="w-8 h-8" src="/public/flex_2.svg" />
+                        <img className="w-8 h-8" src="/flex_2.svg" />
                         <p className=" pl-2 font-thin">{slide.body}</p>
                       </div>
                       <div className="flex justify-center items-center">
-                        <img className="w-8 h-8" src="/public/flex_3.svg" />
+                        <img className="w-8 h-8" src="/flex_3.svg" />
                         <p className=" pl-2 font-thin">{slide.display}</p>
                       </div>
                       <div className="flex justify-center items-center">
-                        <img className="w-8 h-8" src="/public/flex_4.svg" />
+                        <img className="w-8 h-8" src="/flex_4.svg" />
                         <p className=" pl-2 font-thin">{slide.charge}</p>
                       </div>
                     </div>

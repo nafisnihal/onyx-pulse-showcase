@@ -13,7 +13,7 @@ export const VoopooJourney = () => {
       <div className="grid grid-cols-2 gap-6">
         <div className="relative group cursor-pointer">
           <img
-            src="/public/argus_pc.jpg"
+            src="/argus_pc.jpg"
             className="brightness-50 group-hover:brightness-100 transition-all ease-in-out duration-200"
           />
           <h1 className="text-3xl font-bold absolute left-64 bottom-12">
@@ -22,7 +22,7 @@ export const VoopooJourney = () => {
         </div>
         <div className="relative group cursor-pointer">
           <img
-            src="/public/drag_pc.jpg"
+            src="/drag_pc.jpg"
             className="brightness-50 group-hover:brightness-100 transition-all ease-in-out duration-200"
           />
           <h1 className="text-3xl font-bold absolute left-64 bottom-12">
@@ -31,7 +31,7 @@ export const VoopooJourney = () => {
         </div>
         <div className="relative group cursor-pointer">
           <img
-            src="/public/v_pc.jpg"
+            src="/v_pc.jpg"
             className="brightness-50 group-hover:brightness-100 transition-all ease-in-out duration-200"
           />
           <h1 className="text-3xl font-bold absolute left-64 bottom-12">
@@ -40,7 +40,7 @@ export const VoopooJourney = () => {
         </div>
         <div className="relative group cursor-pointer">
           <img
-            src="/public/vinci_pc_37.jpg"
+            src="/vinci_pc_37.jpg"
             className="brightness-50 group-hover:brightness-100 transition-all ease-in-out duration-200"
           />
           <h1 className="text-3xl font-bold absolute left-64 bottom-12">

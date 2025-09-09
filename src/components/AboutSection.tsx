@@ -6,16 +6,16 @@ export const AboutSection = () => {
     <div>
       <Marquee speed={200} className=" ">
         <div>
-          <img className="w-30 h-32 mr-16" src="/public/union (1).png" />
+          <img className="w-30 h-32 mr-16" src="/union.png" />
         </div>
         <div>
-          <img className="w-30 h-32 mr-16" src="/public/union (1).png" />
+          <img className="w-30 h-32 mr-16" src="/union.png" />
         </div>
         <div>
-          <img className="w-30 h-32 mr-16" src="/public/union (1).png" />
+          <img className="w-30 h-32 mr-16" src="/union.png" />
         </div>
         <div>
-          <img className="w-30 h-32 mr-16" src="/public/union (1).png" />
+          <img className="w-30 h-32 mr-16" src="/union.png" />
         </div>
       </Marquee>
     </div>
